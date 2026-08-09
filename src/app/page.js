@@ -232,7 +232,7 @@ export default function SmoothCinematicJourney() {
       <AnimatePresence>
         {stage === 0 && (
           <motion.div exit={{ opacity: 0, transition: { duration: 1.5 } }} className="flex flex-col items-center text-white z-50">
-            <h2 className="text-xl font-bold mb-12 tracking-widest text-gray-400">PURA ANDHERA HAI...</h2>
+            <h2 className="text-xl font-bold mb-12 tracking-widest text-gray-400">PURA ANDHERA HAI...Light On kr Lo</h2>
             <div className="w-16 h-40 bg-gray-900 rounded-full p-2 relative shadow-inner border border-gray-800">
               <motion.div drag="y" dragConstraints={{ top: 0, bottom: 90 }} dragElastic={0.1} onDragEnd={(e, info) => { if (info.offset.y > 60) turnOnLights(); }} className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center cursor-grab shadow-lg">
                 <Power className="w-6 h-6 text-gray-900" />
@@ -443,7 +443,7 @@ export default function SmoothCinematicJourney() {
             <AnimatePresence>
               {isRubbed && (
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, transition: { duration: 1 } }} className="mt-8 text-center w-full px-6">
-                  <p className="text-gray-700 font-bold text-xl mb-4">Happy Birthday Rom Rom! 🎉</p>
+                  <p className="text-gray-700 font-bold text-xl mb-4">Happy Birthday Rom Rom ❤💕🥳🌟🌟</p>
                   <p className="text-gray-500 text-sm mb-6">Tu duniya ki sabse badi nautanki hai, par hamare group ki jaan hai. Love you!</p>
                   <button onClick={() => confetti({ particleCount: 300, spread: 150, origin: { y: 0.6 }, colors: ["#f43f5e", "#fb923c", "#3b82f6"] }) } className="w-full bg-gradient-to-r from-rose-400 to-orange-400 text-white py-3 rounded-xl font-bold shadow-xl active:scale-95 transition-transform duration-300">Celebrate! 🎁</button>
                 </motion.div>
